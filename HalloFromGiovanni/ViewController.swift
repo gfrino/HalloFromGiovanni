@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Backgroundy: UIImageView!
+
+    @IBOutlet weak var Firma: UIImageView!
+    
+    @IBOutlet weak var Toccami: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,8 +25,16 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    
+
+    }
+    @IBAction func OnceIsPressed(_ sender: Any) {
+        
+        Backgroundy.isHidden = false
+        Firma.isHidden = false
+        Toccami.isHidden = true
+        
+        
     }
 
-
 }
-
